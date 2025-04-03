@@ -71,6 +71,7 @@ const Footer = () => {
           {/* 전화번호 */}
           <div className={styles.mobilePhone}>
             <IoCall size={20} />
+            <div>사이드 협업문의 문의</div>
             <span>1533-8848</span>
           </div>
 
@@ -130,8 +131,10 @@ const Footer = () => {
               </p>
             </div>
             <div className={styles.rightSide}>
+            <div>사이드 문의</div>
               <div className={styles.phoneNumber}>
                 <IoCall size={24} />
+                
                 <span>1533-8848</span>
               </div>
               <div className={styles.companyInfo}>
