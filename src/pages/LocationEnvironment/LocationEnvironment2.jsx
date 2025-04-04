@@ -65,7 +65,7 @@ const LocationEnvironment1 = () => {
         />
         <link
           rel="canonical"
-          href="https://www.vaaclubs.com/LocationEnvironment/primium"
+          href="https://niceoi.kr/LocationEnvironment/primium"
         />
 
         {/* Open Graph - 소셜 미디어 공유 최적화 */}
@@ -79,11 +79,11 @@ const LocationEnvironment1 = () => {
         />
         <meta
           property="og:image"
-          content="https://www.vaaclubs.com/Main1.png"
+          content="https://niceoi.kr/Main1.png"
         />
         <meta
           property="og:url"
-          content="https://www.vaaclubs.com/LocationEnvironment/primium"
+          content="https://niceoi.kr/LocationEnvironment/primium"
         />
         <meta property="og:site_name" content="브레인시티 앤네이처 미래도" />
 
@@ -99,11 +99,11 @@ const LocationEnvironment1 = () => {
         />
         <meta
           name="twitter:image"
-          content="https://www.vaaclubs.com/Main1.png"
+          content="https://niceoi.kr/Main1.png"
         />
         <meta
           name="twitter:url"
-          content="https://www.vaaclubs.com/LocationEnvironment/primium"
+          content="https://niceoi.kr/LocationEnvironment/primium"
         />
 
         {/* 구조화된 데이터 (JSON-LD) - 검색엔진 이해도 향상 */}
@@ -114,7 +114,7 @@ const LocationEnvironment1 = () => {
 			 "@type": "WebPage",
 			 "name": "브레인시티 앤네이처 미래도 - 프리미엄",
 			 "description": "브레인시티 앤네이처 미래도의 프리미엄 페이지에서는 이 아파트가 제공하는 다양한 고급 특화 시설과 혜택을 소개합니다. 특화 설계, 고급 자재, 입주자 전용 서비스를 통해 더 나은 생활을 제공합니다. 프리미엄 세부 사항을 확인하고 이 아파트에서 제공하는 차별화된 가치를 경험하세요.",
-			 "url": "https://www.vaaclubs.com/LocationEnvironment/primium"
+			 "url": "https://niceoi.kr/LocationEnvironment/primium"
 				 }
 				 `}
         </script>
