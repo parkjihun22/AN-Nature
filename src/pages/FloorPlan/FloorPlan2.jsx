@@ -15,8 +15,10 @@ import page1 from "../../assets/FloorPlan/FloorPlan2/page1.jpg";
 const FloorPlan2 = () => {
   const menuContents = [
     { title: "59㎡", url: "/FloorPlan/59A" },
-    { title: "84㎡", url: "/FloorPlan/59B" },
-    { title: "세대안내영상", url: "/FloorPlan/videos" }, // 세대안내영상 링크
+    { title: "84A", url: "/FloorPlan/59B" },
+    { title: "84B", url: "/FloorPlan/84A" },
+    { title: "84C", url: "/FloorPlan/84B" },
+    // { title: "세대안내영상", url: "/FloorPlan/videos" }, // 세대안내영상 링크
   ];
 
   const [isScroll, setIsScroll] = useState(false);

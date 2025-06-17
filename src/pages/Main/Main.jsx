@@ -252,7 +252,7 @@ const Main = () => {
               <div className={styles.textBox}>
                 <div className={styles.title}>
                   소수만 누릴 수 있는<br />
-                  <span>착한가격의 아파트 브레인시티 앤네이처 미래도</span>
+                  <span>착한가격의 아파트 <br />브레인시티 앤네이처 미래도</span>
                 </div>
                 <div className={styles.subTitle}>
                   <div className={styles.textLine}></div>
@@ -462,7 +462,7 @@ const Main = () => {
               </div>
               <div className={styles.mainImageTitleBox1}>
                 <div className={styles.mainImageText1}>평택이 기다린<br /> 가장 착한 아파트</div>
-                <div className={styles.mainImageText5}>브레인시티 <br />앤네이처 미래도</div>
+                <div className={styles.mainImageText5}>평택 브레인시티 <br />앤네이처 미래도</div>
               </div>
             </div>
           </div>

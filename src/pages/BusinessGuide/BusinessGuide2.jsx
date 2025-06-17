@@ -12,9 +12,9 @@ import page1 from "../../assets/BusinessGuide/BusinessGuide2/page1.jpg";
 
 const BusinessGuide2 = () => {
   const menuContents = [
-    { title: "분양일정", url: "/BusinessGuide/intro" },
+    { title: "사업안내", url: "/BusinessGuide/intro" },
     { title: "분양일정", url: "/BusinessGuide/plan" },
-    { title: "선착순계약 서류안내", url: "/BusinessGuide/documents" },
+    { title: "계약안내문", url: "/BusinessGuide/documents" },
   ];
   const [isScroll, setIsScroll] = useState(false);
   const [isImageVisible, setIsImageVisible] = useState(false); // isImageVisible 상태 추가

@@ -60,11 +60,12 @@
     }
 
     .title {
+        margin-top: 3vw;
         margin-bottom: 1vw;
         font-family: "Noto Sans KR", sans-serif;
         font-optical-sizing: auto;
         font-weight: 500;
-        font-size: 1vw;
+        font-size: 2vw;
         opacity: 0;
         transform: translateY(-20px);
         transition: opacity 2s ease, transform 2s ease, font-size 1s ease-out;
@@ -72,17 +73,18 @@
         &.showTitle {
             opacity: 1;
             transform: translateY(0);
-            font-size: 3vw; /* 크기 살짝 커지는 효과 */
+            font-size: 2vw; /* 크기 살짝 커지는 효과 */
         }
 
         @media (max-width: 900px) {
+            margin-top: 10vw;
             font-size: 8vw;
         }
     }
 
     .text {
-        margin: 1vw;
-        font-size: 1.2vw;
+        margin: 0.5vw;
+        font-size: 0.9vw;
         opacity: 0;
         transform: translateY(20px);
         transition: opacity 2s ease, transform 2s ease;
@@ -97,6 +99,7 @@
         }
 
         @media (max-width: 900px) {
+            
             margin: 0.5vw;
             font-size: 2vw;
         }

@@ -5,7 +5,7 @@
         <title>브레인시티 앤네이처 미래도</title>
         <link>https://niceoi.kr/</link>
         <description>
-            브레인시티 앤네이처 미래도 | 브레인시티 미래도 | 대표홈페이지 ☎ 1533-8848 | 브레인시티 앤네이처 미래도 모델하우스 | 브레인시티 10BL
+            브레인시티 앤네이처 미래도｜☎ 1533-8848｜브레인시티 앤네이처 미래도 모델하우스 ｜사업개요｜입지안내｜단지안내｜세대안내｜방문예약｜모델하우스
         </description>
         <language>ko-kr</language>
 
@@ -88,67 +88,47 @@
         </item>
 
         <item>
-            <title>동호수배치도</title>
+            <title>호수배치도</title>
             <link>https://niceoi.kr/ComplexGuide/intro</link>
             <description>평택브레인시티 미래도 인의 호수 배치도 안내란입니다.</description>
             <pubDate>Sat, 30 Nov 2024 14:30:00 KST</pubDate>
         </item>
 
         <item>
-            <title>59A</title>
+            <title>59A 평면도</title>
             <link>https://niceoi.kr/FloorPlan/59A</link>
             <description>브레인시티미래도 의 59A타입의 평면도 안내란입니다.</description>
             <pubDate>Sat, 30 Nov 2024 14:30:00 KST</pubDate>
         </item>
         <item>
-            <title>59B</title>
+            <title>84A 평면도</title>
             <link>https://niceoi.kr/FloorPlan/59B</link>
-            <description>브레인시티미래도 의 59B타입의 평면도 안내란입니다</description>
+            <description>브레인시티미래도 의 84A타입의 평면도 안내란입니다</description>
             <pubDate>Sat, 30 Nov 2024 14:30:00 KST</pubDate>
         </item>
         <item>
-            <title>84A</title>
+            <title>84B 평면도</title>
             <link>https://niceoi.kr//FloorPlan/84A</link>
-            <description>브레인시티미래도 의 84타입의 평면도 안내란입니다</description>
-            <pubDate>Sat, 30 Nov 2024 14:30:00 KST</pubDate>
-        </item>
-        <item>
-            <title>84B</title>
-            <link>https://niceoi.kr/FloorPlan/84B</link>
             <description>브레인시티미래도 의 84B타입의 평면도 안내란입니다</description>
             <pubDate>Sat, 30 Nov 2024 14:30:00 KST</pubDate>
         </item>
         <item>
-            <title>119A</title>
-            <link>https://niceoi.kr/FloorPlan/114A</link>
-            <description>브레인시티미래도 의 119A타입의 평면도 안내란입니다</description>
+            <title>84C 평면도</title>
+            <link>https://niceoi.kr/FloorPlan/84B</link>
+            <description>브레인시티미래도 의 84C타입의 평면도 안내란입니다</description>
             <pubDate>Sat, 30 Nov 2024 14:30:00 KST</pubDate>
         </item>
-
-        <item>
-            <title>119B</title>
-            <link>https://niceoi.kr/FloorPlan/114B</link>
-            <description>브레인시티미래도 의 119B타입의 평면도 안내란입니다</description>
-            <pubDate>Sat, 30 Nov 2024 14:30:00 KST</pubDate>
-        </item>
-        <item>
-            <title>84A</title>
-            <link>https://niceoi.kr/Interior/59A</link>
-            <description>브레인시티미래도 의 84A타입의 인테리어정보를 제공하여 고객님들의 성공적인 분양을 도와드립니다</description>
-            <pubDate>Sat, 30 Nov 2024 14:30:00 KST</pubDate>
-        </item>
-
          <item>
-            <title>119A</title>
+            <title>59타입 인테리어</title>
             <link>https://niceoi.kr/Interior/84A</link>
-            <description>브레인시티미래도 의 119A타입의 인테리어정보를 제공하여 고객님들의 성공적인 분양을 도와드립니다</description>
+            <description>브레인시티미래도 의 59타입의 인테리어정보를 제공하여 고객님들의 성공적인 분양을 도와드립니다</description>
             <pubDate>Sat, 30 Nov 2024 14:30:00 KST</pubDate>
         </item>
 
         <item>
-            <title>119B</title>
+            <title>84A 인테리어</title>
             <link>https://niceoi.kr/Interior/84B</link>
-            <description>브레인시티미래도 의 119B타입의 인테리어정보를 제공하여 고객님들의 성공적인 분양을 도와드립니다</description>
+            <description>브레인시티미래도 의 84A타입의 인테리어정보를 제공하여 고객님들의 성공적인 분양을 도와드립니다</description>
             <pubDate>Sat, 30 Nov 2024 14:30:00 KST</pubDate>
         </item>
     </channel>

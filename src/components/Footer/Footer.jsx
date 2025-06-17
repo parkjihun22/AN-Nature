@@ -11,7 +11,7 @@ import InterestPopup from "../InterestPopup/InterestPopup";
 
 // FAMILY SITE 목록 예시
 const partnerSites = [
-  { name: "브레인시티 앤네이처 미래도", url: "https://niceoi.kr/" },
+  { name: "평택 브레인시티 앤네이처 미래도", url: "https://niceoi.kr/" },
 
 ];
 
@@ -49,15 +49,14 @@ const Footer = () => {
         <div className={styles.mobileWrapper}>
           {/* 상단 로고 */}
           <div className={styles.mobileLogo}>
-            <h2>SUJAIN</h2>
-            <p>브레인시티 <br />앤네이처 미래도</p>
+            <h2>평택 브레인시티 앤네이처 미래도</h2>
           </div>
 
           {/* 안내문구 */}
           <div className={styles.mobileInfoText}>
             <p>
-              본 웹사이트에서 사용된 사진 및 이미지는 <br />소비자의 이해를 돕기 위한
-              것으로 실제와 다를 수 있습니다.
+              본 웹사이트에서 사용된 사진 및 이미지는  소비자의 이해를 돕기 위한
+              것으로 <br />실제와 다를 수 있습니다.
             </p>
             <p>
               단지 주변 개발계획은 인허가 및 정부 정책에 따라 변경 또는 연기,
@@ -68,17 +67,13 @@ const Footer = () => {
           {/* 전화번호 */}
           <div className={styles.mobilePhone}>
             <IoCall size={20} />
-            <div>사이드 협업문의 문의</div>
             <span>1533-8848</span>
           </div>
 
           {/* 시행사/시공사 */}
           <div className={styles.mobileCompany}>
             <div>
-              <strong>시&nbsp;행&nbsp;사</strong> 강산건설(주), (주)미래도건설
-            </div>
-            <div>
-              <strong>시&nbsp;공&nbsp;사</strong> 강산건설(주), (주)미래도건설
+              <strong>시&nbsp;공&nbsp;사</strong> (주)강산건설
             </div>
           </div>
 
@@ -110,7 +105,7 @@ const Footer = () => {
           {/* COPYRIGHT */}
           <div className={styles.mobileCopyright}>
             <p>
-              COPYRIGHTⓒ 2024 브레인시티 앤네이처 미래도 INC. ALL RIGHTS RESERVED.
+              COPYRIGHTⓒ 2025 평택 브레인시티 앤네이처 미래도 INC. ALL RIGHTS RESERVED.
             </p>
           </div>
         </div>
@@ -118,9 +113,9 @@ const Footer = () => {
         <>
           <div className={styles.desktopWrapper}>
             <div className={styles.leftSide}>
-              <h2>SUJAIN 브레인시티 앤네이처 미래도</h2>
+              <h2>평택 브레인시티 앤네이처 미래도</h2>
               <p>
-                본 웹사이트에서 사용된 사진 및 이미지는 소비자의 이해를 돕기 위한
+                본 웹사이트에서 사용된 사진 및 이미지는 <br /> 소비자의 이해를 돕기 위한
                 것으로 실제와 다를 수 있습니다.
                 <br />
                 단지 주변 개발계획은 인허가 및 정부 정책에 따라 변경 또는 연기,
@@ -128,18 +123,13 @@ const Footer = () => {
               </p>
             </div>
             <div className={styles.rightSide}>
-            <div>사이드 문의</div>
               <div className={styles.phoneNumber}>
                 <IoCall size={24} />
-                
                 <span>1533-8848</span>
               </div>
               <div className={styles.companyInfo}>
                 <div>
-                  <strong>시&nbsp;행&nbsp;사</strong> 강산건설(주), (주)미래도건설
-                </div>
-                <div>
-                  <strong>시&nbsp;공&nbsp;사</strong> 강산건설(주), (주)미래도건설
+                  <strong>시&nbsp;공&nbsp;사</strong> (주)강산건설 
                 </div>
               </div>
               <div className={styles.buttonRow}>
@@ -167,7 +157,7 @@ const Footer = () => {
           </div>
           <div className={styles.desktopCopyright}>
             <p>
-              COPYRIGHTⓒ 2024 브레인시티 앤네이처 미래도 INC. ALL RIGHTS RESERVED.
+              COPYRIGHTⓒ 2025 평택 브레인시티 앤네이처 미래도 INC. ALL RIGHTS RESERVED.
             </p>
           </div>
         </>

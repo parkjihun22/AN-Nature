@@ -11,8 +11,8 @@ import page1 from "../../assets/SalesInfo/SalesInfoStampTax/page1.jpg";
 
 const ComplexGuide1 = () => {
   const menuContents = [
-    { title: "인터넷 청약", url: "/SalesInfo/guide" },
-    { title: "체크포인트", url: "/SalesInfo/SubscriptionGuide" },
+    // { title: "인터넷 청약", url: "/SalesInfo/guide" },
+    // { title: "체크포인트", url: "/SalesInfo/SubscriptionGuide" },
     { title: "모집공고안내", url: "/SalesInfo/announcement" },
     { title: "인지세납부안내", url: "/SalesInfo/stampTax" },
   ];

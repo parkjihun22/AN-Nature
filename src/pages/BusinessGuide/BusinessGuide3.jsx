@@ -13,8 +13,8 @@ import page1 from "../../assets/BusinessGuide/documents/contract.jpg";
 const BusinessGuide2 = () => {
   const menuContents = [
     { title: "사업안내", url: "/BusinessGuide/intro" },
-    { title: "계약서류안내", url: "/BusinessGuide/plan" },
-    { title: "선착순계약 서류안내", url: "/BusinessGuide/documents" },
+    { title: "분양일정", url: "/BusinessGuide/plan" },
+    { title: "계약안내문", url: "/BusinessGuide/documents" },
   ];
   const [isScroll, setIsScroll] = useState(false);
   const [selectedOption, setSelectedOption] = useState(1); // 선택된 옵션 (1~6)

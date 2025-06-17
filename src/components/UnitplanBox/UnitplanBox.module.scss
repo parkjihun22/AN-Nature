@@ -59,7 +59,7 @@
     .typeImg {
         margin: 1vw 1vw 0 1vw;
         padding: 1vw 2vw;
-        width: 35vw;
+        width: 30vw;
         background-color: #FFFFFF;
         border: 5px solid #d1af73;
 
@@ -68,7 +68,7 @@
         transition: opacity 0.5s ease-out;
 
         @media (max-width: 900px) {
-            width: 70%;
+            width: 60%;
         }
     }
 
