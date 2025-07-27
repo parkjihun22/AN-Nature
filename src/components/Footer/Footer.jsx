@@ -11,7 +11,7 @@ import InterestPopup from "../InterestPopup/InterestPopup";
 
 // FAMILY SITE 목록 예시
 const partnerSites = [
-  { name: "평택 브레인시티 앤네이처 미래도", url: "https://niceoi.kr/" },
+  { name: "평택브레인시티 앤네이처미래도", url: "https://niceoi.kr/" },
 
 ];
 
