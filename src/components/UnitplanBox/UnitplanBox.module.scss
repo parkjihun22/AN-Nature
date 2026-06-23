@@ -5,7 +5,7 @@
     align-items: center;
     gap: 1vw;
 
-    margin-top: 1.5vw;
+    margin-top: 3vw;
 
     @media (max-width: 900px) {
         margin-top: 2vw;
@@ -16,15 +16,15 @@
     .clickedTypeBtn {
         padding: 0.5vw 1.2vw;
         border-radius: 2vw;
-        font-family: "HakgyoansimBareonbatangB";
-        font-size: 1.1vw;
+  font-family: 'Pretendard-Regular';
+        font-size: 0.8vw;
 
         cursor: pointer;
 
         @media (max-width: 900px) {
             padding: 1vw 3vw;
             border-radius: 3vw;
-            font-size: 3vw;
+            font-size: 2vw;
         }
     }
 

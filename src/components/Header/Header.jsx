@@ -14,13 +14,13 @@ import mainlogowhite from "../../assets/logo/mainlogowhite.jpg";
 import InterestPopup from "../../components/InterestPopup/InterestPopup";
 
 const menuArray = [
-  {
-    title: "브랜드소개",
-    subMenu: [
-      { subTitle: "브랜드 소개", subUrl: "/Brand/intro" },
-      { subTitle: "홍보 영상", subUrl: "/Brand/video" },
-    ],
-  },
+  // {
+  //   title: "브랜드소개",
+  //   subMenu: [
+  //     { subTitle: "브랜드 소개", subUrl: "/Brand/intro" },
+  //     { subTitle: "홍보 영상", subUrl: "/Brand/video" },
+  //   ],
+  // },
   {
     title: "사업개요",
     subMenu: [
@@ -58,9 +58,9 @@ const menuArray = [
     title: "세대안내",
     subMenu: [
       { subTitle: "59㎡", subUrl: "/FloorPlan/59A" },
-      { subTitle: "84A", subUrl: "/FloorPlan/59B" },
-      { subTitle: "84B", subUrl: "/FloorPlan/84A" },
-      { subTitle: "84C", subUrl: "/FloorPlan/84B" },
+      { subTitle: "84A㎡", subUrl: "/FloorPlan/59B" },
+      { subTitle: "84B㎡", subUrl: "/FloorPlan/84A" },
+      { subTitle: "84C㎡", subUrl: "/FloorPlan/84B" },
       
 
     ],

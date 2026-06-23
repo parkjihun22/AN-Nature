@@ -224,19 +224,30 @@ const Main = () => {
               <div className={styles.textBox}>
                 <div className={styles.text1}>Location</div>
                 <div className={styles.text2}>
-                  " 방문 예약 고객 전원 스타벅스 기프티콘 100% 증정 "
+                  평택 브레인시티 앤네이처 미래도 중요 POINT
                 </div>
                 <div className={styles.text3}>
-                  - 브레인시티 중심상업지구 매우인접 <br />
-                  - 첨단 아주대학교 종합병원 도보 5분 <br />
-                  - 평택 지제역 1호선, STR, KTX, GTX-A · C 확정으로 펜타역세권 <br />
-                  - 모두를 누리는 브레인시티 앤네이처 미래도
+                - 브레인시티 KAIST 평택캠퍼스(예정)·아주대병원(예정) 수혜 중심 입지<br/>
+                - 삼성전자 평택캠퍼스 직주근접으로 풍부한 배후수요 기대<br/>
+                - 평택 최대 규모 브레인시티 첨단산업클러스터 미래가치<br/>
+                - GTX-A·GTX-C 연장 추진, SRT·KTX·1호선 평택지제역 광역교통망<br/>
+                - 중심상업지구·의료복합타운·교육시설을 모두 누리는 원스톱 생활권<br/>
+                - 브레인시티를 대표할 미래가치 프리미엄, 앤네이처 미래도<br/>
                 </div>
                 <div className={styles.text4}>
-                  <a href="https://naver.me/55rUFpYq" target="_black">
-                    관심고객 등록하기 {">"}
-                  </a>
-                </div>
+              {/* 외부 링크대신 방문예약 클릭 시 팝업 호출 */}
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsInterestPopupOpen(true);
+                }}
+                className={styles.popupBtn}
+                aria-label="관심고객 등록하기"
+              >
+                관심고객 등록하기 {">"}
+              </a>
+            </div>
               </div>
               <div className={styles.menuBox}>
                 <img src={section1_Image1} alt="브레인시티 앤네이처 미래도브랜드소개-image2" />
@@ -452,34 +463,54 @@ const Main = () => {
             <img src={mobileImageMain} className={styles.mainImage} alt="브레인시티 앤네이처 미래도mobilemain-image1" />
             <div className={styles.overlay}></div>
             <div className={styles.mainImageTextBox1}>
-              <div className={styles.mainImageTextSub1}>
-                분양가 상한제 적용<br />
-                <span className={styles.greyText}>착한분양가</span><br />
-                부담을 덜어주는<br />
-                <span className={styles.greyText}>착한 옵션</span><br />
-                계약금 5%로 내집마련기회<br />
-                <span className={styles.greyText}>착한조건</span>
-              </div>
-              <div className={styles.mainImageTitleBox1}>
-                <div className={styles.mainImageText1}>평택이 기다린<br /> 가장 착한 아파트</div>
-                <div className={styles.mainImageText5}>평택 브레인시티 <br />앤네이처 미래도</div>
-              </div>
+            <div className={styles.mainImageTextSub1}>
+              삼성전자 평택캠퍼스와<br />
+              브레인시티 첨단산업단지의<br />
+              <span className={styles.greyText}>직주근접 프리미엄</span><br />
+
+              KAIST 평택캠퍼스(예정)<br />
+              아주대병원(예정)이 만드는<br />
+              <span className={styles.greyText}>미래가치 중심입지</span><br />
+
+              분양가상한제 적용으로 누리는<br />
+              <span className={styles.greyText}>합리적인 내 집 마련</span>
             </div>
+
+            <div className={styles.mainImageTitleBox1}>
+              <div className={styles.mainImageText1}>
+                브레인시티의 미래를 선점하다
+              </div>
+              <div className={styles.mainImageText5}>
+                평택 브레인시티 앤네이처 미래도
+                </div>
+                </div>
+                </div>
           </div>
 
           <div className={styles.container1}>
             <div className={styles.text1}>Location</div>
             <div className={styles.text2}>
-              "방문예약을 하시면 신세계 상품권 100% 증정 "
-            </div>
-            <div className={styles.text3}>
-              - 브레인시티 중심상업지구 가장인접한 입지<br />
-              - 첨단 아주대학교 AI종합병원, 의료R＆D센터 도보 5분<br />
-              - 평택 지제역 KTX, GTX-A · C 확정 삼성전자 평택캠퍼스, 초등학교, 수변공원<br />
-              - 모두를 누리는 반도체밸리 주거 타운의 완성
-            </div>
+                  평택 브레인시티 앤네이처 미래도 중요 POINT
+                </div>
+                <div className={styles.text3}>
+                - 브레인시티 KAIST 평택캠퍼스(예정)·아주대병원(예정) 수혜 중심 입지<br/>
+                - 삼성전자 평택캠퍼스 직주근접으로 풍부한 배후수요 기대<br/>
+                - 평택 최대 규모 브레인시티 첨단산업클러스터 미래가치<br/>
+                - GTX-A·GTX-C 연장 추진, SRT·KTX·1호선 평택지제역 광역교통망<br/>
+                - 중심상업지구·의료복합타운·교육시설을 모두 누리는 원스톱 생활권<br/>
+                - 브레인시티를 대표할 미래가치 프리미엄, 앤네이처 미래도<br/>
+                </div>
             <div className={styles.text4}>
-              <a href="https://naver.me/55rUFpYq" target="_black">
+              {/* 외부 링크대신 방문예약 클릭 시 팝업 호출 */}
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsInterestPopupOpen(true);
+                }}
+                className={styles.popupBtn}
+                aria-label="관심고객 등록하기"
+              >
                 관심고객 등록하기 {">"}
               </a>
             </div>

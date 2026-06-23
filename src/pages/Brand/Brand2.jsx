@@ -13,8 +13,8 @@ import { Helmet } from "react-helmet-async";
 
 const Brand2 = () => {
   const menuContents = [
-    { title: "홍보영상", url: "/brand/intro" },
-    { title: "홍보 영상", url: "/brand/video" },
+    // { title: "브랜드 소개", url: "/brand/intro" },
+    // { title: "홍보 영상", url: "/brand/video" },
   ];
   const [isScroll, setIsScroll] = useState(false);
   const [isTextVisible, setIsTextVisible] = useState(true); // isTextVisible 상태 추가

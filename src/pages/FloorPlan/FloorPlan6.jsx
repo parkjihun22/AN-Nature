@@ -14,12 +14,10 @@ import page1 from "../../assets/FloorPlan/FloorPlan6/page1.jpg"
 
 const FloorPlan6 = () => {
 	const menuContents = [
-		{ title: "59A", url: "/FloorPlan/59A" },
-		{ title: "59B", url: "/FloorPlan/59B" },
-		{ title: "84A", url: "/FloorPlan/84A" },
-		{ title: "84B", url: "/FloorPlan/84B" },
-		{ title: "119A", url: "/FloorPlan/114A" },
-		{ title: "119B", url: "/FloorPlan/114B" },
+		{ title: "59㎡", url: "/FloorPlan/59A" },
+		{ title: "84A㎡", url: "/FloorPlan/59B" },
+		{ title: "84B㎡", url: "/FloorPlan/84A" },
+		{ title: "84C㎡", url: "/FloorPlan/84B" },
 	];
 
 	const [isScroll, setIsScroll] = useState(false);
