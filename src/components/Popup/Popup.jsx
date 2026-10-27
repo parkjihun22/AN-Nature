@@ -1,57 +1,150 @@
 import React, { useState, useEffect } from "react";
-import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
+import { createPortal } from "react-dom";
+import { useCookies } from "react-cookie";
+import { FaAngleRight } from "react-icons/fa6";
 
-import styles from './Popup.module.scss'
-import page1 from '../../assets/Popup/page1.jpg'
-import page2 from '../../assets/Popup/page2.jpg'
-import page3 from '../../assets/Popup/page3.jpg'
-import page4 from '../../assets/Popup/page4.jpg'
+import styles from "./Popup.module.scss";
 
-const popupArray = [
-  { img: page1, url: "" },
-  { img: page2, url: "https://naver.me/55rUFpYq" },
-  { img: page3, url: "" },
-  { img: page4, url: "" },
-]
+const COOKIE_NAME = "Braincity_Benefits_PC_20261027";
 
-const Popup = () => {
-  // 팝업이 열려있는지 여부를 추적하는 상태
+const Popup = ({
+  popupImage,
+  suspended = false,
+  openInterestPopup = () => {},
+}) => {
   const [isClick, setIsClick] = useState(false);
 
-  // 페이지 로드 시 2초 후 팝업이 열리도록 useEffect 사용
+  const [cookies, setCookie] = useCookies([COOKIE_NAME]);
+  const isPopupShown = Boolean(cookies[COOKIE_NAME]);
+
+  // PC 팝업 표시 시간
   useEffect(() => {
+    if (isPopupShown) return;
+
     const timer = setTimeout(() => {
-      setIsClick(true); // 2초 후에 팝업 자동 열기
-    }, 3000); // 2초 후에 실행
+      setIsClick(true);
+    }, 300); // 300 = 0.3초
 
-    // 클린업 함수 (컴포넌트가 언마운트될 때 타이머를 정리)
     return () => clearTimeout(timer);
-  }, []); // 빈 배열을 전달하여 컴포넌트 마운트 시 한 번만 실행
+  }, [isPopupShown]);
 
-  return (
-    <div className={styles.container}>
-      {isClick &&
-        <div className={styles.imgContainer} >
-          {popupArray.map((value, idx) => (
-            <img
-              key={idx}  // key를 넣어야 배열 렌더링 시 효율적으로 동작
-              className={styles.popupImg}
-              src={value.img}
-              alt={`progio-popup-image-${idx}`}
-            />
-          ))}
-        </div>
+  useEffect(() => {
+    if (!isClick || suspended || isPopupShown) return;
+
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") {
+        setIsClick(false);
       }
-      <div className={styles.openPopupBtn} onClick={() => setIsClick(!isClick)}>
-        <div className={styles.btnIcon}>
-          {isClick ? <FaAngleLeft size={20} color={"#FFFFFF"} /> : <FaAngleRight size={20} color={"#FFFFFF"} />}
-        </div>
-        <div className={styles.btnText}>
-          POPUP
-        </div>
-      </div>
-    </div>
-  )
-}
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener(
+        "keydown",
+        handleKeyDown
+      );
+    };
+  }, [isClick, suspended, isPopupShown]);
+
+  const handleTodayClose = () => {
+    const expires = new Date();
+
+    // 당일 자정까지 숨김
+    expires.setHours(24, 0, 0, 0);
+
+    setCookie(COOKIE_NAME, true, {
+      path: "/",
+      expires,
+      sameSite: "lax",
+    });
+
+    setIsClick(false);
+  };
+
+  const handleClose = () => {
+    setIsClick(false);
+  };
+
+  const handleReservationClick = () => {
+    setIsClick(false);
+    openInterestPopup();
+  };
+
+  if (
+    isPopupShown ||
+    suspended ||
+    typeof document === "undefined"
+  ) {
+    return null;
+  }
+
+  return createPortal(
+    <div
+      className={styles.container}
+      data-native-scroll-section="true"
+    >
+      {isClick ? (
+        <section
+          className={styles.popupBox}
+          aria-label="브레인시티 앤네이처 미래도 특별혜택"
+        >
+          <div className={styles.imgContainer}>
+            <img
+              className={styles.popupImg}
+              src={popupImage}
+              alt="브레인시티 앤네이처 미래도 특별혜택. 2천만원 혜택, 계약금 입주까지 0원, 발코니 무상, 에어컨 3대 무상, 계약축하금. 적용 대상과 세부 조건은 계약 전 확인 바랍니다."
+            />
+          </div>
+
+          <button
+            type="button"
+            className={styles.visitReservationBtn}
+            onClick={handleReservationClick}
+          >
+            특별혜택 상담 · 방문예약
+            <FaAngleRight
+              size={16}
+              aria-hidden="true"
+            />
+          </button>
+
+          <div className={styles.btnContainer}>
+            <button
+              type="button"
+              onClick={handleTodayClose}
+            >
+              오늘 하루 보지 않기
+            </button>
+
+            <button
+              type="button"
+              onClick={handleClose}
+            >
+              닫기
+              <span
+                className={styles.closeIcon}
+                aria-hidden="true"
+              >
+                ×
+              </span>
+            </button>
+          </div>
+        </section>
+      ) : (
+        <button
+          type="button"
+          className={styles.openPopupBtn}
+          onClick={() => setIsClick(true)}
+          aria-label="특별혜택 팝업 다시 열기"
+        >
+          <FaAngleRight aria-hidden="true" />
+          <span>특별혜택</span>
+        </button>
+      )}
+    </div>,
+    document.body
+  );
+};
 
 export default Popup;
